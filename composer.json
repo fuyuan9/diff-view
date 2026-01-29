@@ -1,0 +1,46 @@
+{
+    "name": "fuyuan9/diff-view",
+    "version": "1.0.0",
+    "description": "A Filament plugin for viewing diffs.",
+    "keywords": [
+        "laravel",
+        "filament",
+        "diff-view"
+    ],
+    "homepage": "https://github.com/fuyuan9/diff-view",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fuyuan9",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^4.0|^5.0",
+        "spatie/laravel-package-tools": "^1.15",
+        "sebastian/diff": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "laravel/pint": "^1.0",
+        "larastan/larastan": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fuyuan9\\DiffView\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fuyuan9\\DiffView\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fuyuan9\\DiffView\\DiffViewServiceProvider"
+            ]
+        }
+    }
+}
